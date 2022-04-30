@@ -239,13 +239,13 @@ pageClass: routes
 
 ## 首席经济学家论坛
 
-### 最新更新文章列表
+### 最新更新
 
 <Route author="FledgeXu" example="/chinacef" path="/chinacef"/>
 
 ### 专家
 
-<Route author="kdanfly" example="/chinacef/17" path="/chinacef/:experts_id" :paramsDesc="['专家编号']" radar="1" rssbud="1">
+<Route author="kdanfly" example="/chinacef/17/" path="/chinacef/:experts_id/" :paramsDesc="['专家编号']" radar="1" rssbud="1">
 
 | 李迅雷 | 夏斌 |
 | --- | -- |
