@@ -2,24 +2,14 @@ let puppeteer;
 const wait = require('../../lib/utils/wait');
 const cheerio = require('cheerio');
 
-let browser = null;
-
 afterEach(() => {
-    if (browser) {
-        // double insurance to close unclosed browser immediately after each test
-        // if a test closure fails before it can close the browser, the browser process will probably be unclosed,
-        // especially when the test unit is run through `npm run jest puppeteer`
-        browser.close();
-        browser = null;
-    }
     jest.resetModules();
 });
 
 describe('puppeteer', () => {
     it('puppeteer run', async () => {
         puppeteer = require('../../lib/utils/puppeteer');
-        browser = await puppeteer();
-        const startTime = Date.now();
+        const browser = await puppeteer();
         const page = await browser.newPage();
         await page.goto('https://www.google.com', {
             waitUntil: 'domcontentloaded',
@@ -30,17 +20,12 @@ describe('puppeteer', () => {
         expect(html.length).toBeGreaterThan(0);
 
         expect((await browser.process()).signalCode).toBe(null);
-        const sleepTime = 31 * 1000 - (Date.now() - startTime); // prevent long loading time from failing the test
-        if (sleepTime > 0) {
-            await wait(sleepTime);
-        }
+        await wait(31 * 1000);
         expect((await browser.process()).signalCode).toBe('SIGKILL');
-        browser = null;
-    }, 45000);
-
+    }, 40000);
     it('puppeteer without stealth', async () => {
         puppeteer = require('../../lib/utils/puppeteer');
-        browser = await puppeteer({ stealth: false });
+        const browser = await puppeteer({ stealth: false });
         const page = await browser.newPage();
         await page.goto('https://bot.sannysoft.com', {
             waitUntil: 'networkidle0',
@@ -49,7 +34,6 @@ describe('puppeteer', () => {
         const html = await page.evaluate(() => document.body.innerHTML);
         const $ = cheerio.load(html);
         browser.close();
-        browser = null;
 
         const webDriverTest = $('tbody tr').eq(2).find('td').eq(1).text().trim();
         const chromeTest = $('tbody tr').eq(4).find('td').eq(1).text().trim();
@@ -58,10 +42,9 @@ describe('puppeteer', () => {
         expect(['present (failed)', '']).toContain(webDriverTest);
         expect(['missing (failed)', '']).toContain(chromeTest);
     }, 10000);
-
     it('puppeteer with stealth', async () => {
         puppeteer = require('../../lib/utils/puppeteer');
-        browser = await puppeteer({ stealth: true });
+        const browser = await puppeteer({ stealth: true });
         const page = await browser.newPage();
         await page.goto('https://bot.sannysoft.com', {
             waitUntil: 'networkidle0',
@@ -70,8 +53,6 @@ describe('puppeteer', () => {
         const html = await page.evaluate(() => document.body.innerHTML);
         const $ = cheerio.load(html);
         browser.close();
-        browser = null;
-
         const webDriverTest = $('tbody tr').eq(2).find('td').eq(1).text().trim();
         const chromeTest = $('tbody tr').eq(4).find('td').eq(1).text().trim();
         // these are something we really care about
