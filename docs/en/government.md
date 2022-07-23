@@ -131,12 +131,6 @@ Category
 
 </RouteEn>
 
-## U.S. Food and Drug Administration
-
-### CDRHNew
-
-<RouteEn author="nczitzk" example="/fda/cdrh" path="/fda/cdrh" />
-
 ## United Nations
 
 ### Security Council Vetoed a Resolution
