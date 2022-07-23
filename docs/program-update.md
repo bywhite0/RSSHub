@@ -14,12 +14,6 @@ pageClass: routes
 
 </Route>
 
-## Android
-
-### SDK Platform Tools release notes
-
-<Route author="nczitzk" example="/android/platform-tools-releases" path="/android/platform-tools-releases"/>
-
 ## Anki
 
 ### Changes
