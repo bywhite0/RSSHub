@@ -1317,12 +1317,6 @@ Provides all of the Thrillist articles with the specified tag.
 
 </Route>
 
-## Tribal Football
-
-### Latest News
-
-<Route author="Rongronggg9" example="/tribalfootball" path="/tribalfootball" />
-
 ## Uwants
 
 ### 版塊
