@@ -99,9 +99,9 @@ pageClass: routes
 
 ## Darwin Awards
 
-### Award Winners
+### 文章
 
-<Route author="zoenglinghou nciztzk" example="/darwinawards" path="/darwinawards" />
+<Route author="zoenglinghou" example="/darwinawards/all" path="/darwinawards/all"/>
 
 ## dcinside
 
