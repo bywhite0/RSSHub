@@ -1646,6 +1646,18 @@
         docs:"https://docs.rsshub.app/live.html#dou-yin-zhi-bo",
         source:"/:rid",
         target:"/douyin/live/:rid" } ] },
+  "sehuatang.net":{ _name:"色花堂",
+    ".":[ { title:"分区帖子",
+        docs:"https://docs.rsshub.app/multimedia.html#se-hua-tang-fen-qu-tie-zi",
+        source:[ "/:category",
+          "/" ],
+        target:(params, url) => {
+                    const theUrl = new URL(url);
+                    const matches = String(theUrl).match(/forum-(\d)+-\d+/);
+                    const fid = theUrl.searchParams.get('fid') || (matches ? matches[1] : '');
+                    const tid = theUrl.searchParams.get('typeid');
+                    return `/dsndsht23${fid ? `/${fid}` : ''}${tid ? `/${tid}` : ''}`;
+                } } ] },
   "dtcj.com":{ _name:"DT 财经",
     ".":[ { title:"数据侠专栏",
         docs:"https://docs.rsshub.app/finance.html#dt-cai-jing",
@@ -5674,6 +5686,12 @@
         source:[ "/",
           "/articles/:name" ],
         target:"/polkaworld/newest" } ] },
+  "postman.com":{ _name:"Postman",
+    ".":[ { title:"Release Notes",
+        docs:"https://docs.rsshub.app/program-update.html#postman-release-notes",
+        source:[ "/downloads/release-notes",
+          "/" ],
+        target:"/postman/release-notes" } ] },
   "prestige-av.com":{ _name:"Prestige 蚊香社",
     ".":[ { title:"系列作品",
         docs:"https://docs.rsshub.app/multimedia.html#prestige-wen-xiang-she",
@@ -7141,6 +7159,12 @@
         docs:"https://docs.rsshub.app/en/live.html#v-live",
         source:"/channel/:board/board/:board",
         target:"/vlive/channel/:board/board/:board" } ] },
+  "vmware.com":{ _name:"VMware",
+    flings:[ { title:"Flings",
+        docs:"https://docs.rsshub.app/program-update.html#vmware-flings",
+        source:[ "/flings",
+          "/" ],
+        target:"/vmware/flings" } ] },
   "wallhaven.cc":{ _name:"wallhaven",
     ".":[ { title:"Latest",
         docs:"https://docs.rsshub.app/picture.html#wallhaven-zhu-zhu-ti",
