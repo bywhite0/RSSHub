@@ -2853,6 +2853,21 @@
         source:[ "/?tab=new",
           "/" ],
         target:"/hackertalk" } ] },
+  "hafu.edu.cn":{ _name:"河南财政金融学院",
+    www:[ { title:"河南财政金融学院 - 通知公告",
+        docs:"https://docs.rsshub.app/university.html#he-nan-cai-zheng-jin-rong-xue-yuan",
+        source:"/*",
+        target:(params, url) => {
+                    if (url.indexOf('www')) {
+                        return '/hafu/news/ggtz';
+                    }
+                    if (url.indexOf('jwc')) {
+                        return '/hafu/news/jwc';
+                    }
+                    if (url.indexOf('zsjyc')) {
+                        return '/hafu/news/zsjyc';
+                    }
+                } } ] },
   "hakkatv.org.tw":{ _name:"客家電視台",
     ".":[ { title:"新聞首頁 - 客家電視台",
         docs:"https://docs.rsshub.app/traditional-media.html#ke-jia-dian-shi-tai",
@@ -5178,6 +5193,10 @@
         docs:"https://docs.rsshub.app/university.html#nan-jing-da-xue-ke-xue-ji-shu-chu",
         source:[ "/" ],
         target:"/nju/scit/:type" } ],
+    webplus:[ { title:"后勤集团",
+        docs:"https://docs.rsshub.app/university.html#nan-jing-da-xue-hou-qin-ji-tuan",
+        source:[ "/_s25/main.psp" ],
+        target:"/nju/hqjt" } ],
     zbb:[ { title:"招标办公室",
         docs:"https://docs.rsshub.app/university.html#nan-jing-da-xue-zhao-biao-ban-gong-shi",
         source:[ "/" ],
