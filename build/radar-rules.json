@@ -105,6 +105,16 @@
       }
     ]
   },
+  "2cycd.com": {
+    "_name": "二次元虫洞",
+    ".": [
+      {
+        "title": "板块",
+        "docs": "https://docs.rsshub.app/bbs.html#er-ci-yuan-chong-dong",
+        "source": "/:path"
+      }
+    ]
+  },
   "35photo.pro": {
     "_name": "35PHOTO",
     ".": [
@@ -5744,6 +5754,76 @@
         "docs": "https://docs.rsshub.app/new-media.html#zhu-hai-wang-lan-mu",
         "source": "/",
         "target": "/hizu/:column?"
+      }
+    ]
+  },
+  "hjedd.com": {
+    "_name": "海角社区",
+    ".": [
+      {
+        "title": "热门",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-re-men",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/hot"
+      },
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-xin-wen",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/news"
+      },
+      {
+        "title": "大事记",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-shi-ji",
+        "source": [
+          "/article",
+          "/"
+        ],
+        "target": "/hjedd/event"
+      },
+      {
+        "title": "原创",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-yuan-chuang",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/original"
+      },
+      {
+        "title": "精华",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-jing-hua",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/top"
+      },
+      {
+        "title": "公告",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-gong-gao",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/notice"
+      },
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-zui-xin",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/latest"
+      },
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-wen-zhang",
+        "source": [
+          "/article",
+          "/"
+        ]
       }
     ]
   },
