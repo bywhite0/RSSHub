@@ -2146,6 +2146,9 @@
     "/lvv2/top/:channel/:sort?": [
         "Fatpandac"
     ],
+    "/macfilos/blog": [
+        "nczitzk"
+    ],
     "/mcachicago/exhibitions": [
         "chazeon"
     ],
@@ -2158,7 +2161,7 @@
     "/meteor/boards": [
         "TonyRL"
     ],
-    "/meteor/:board": [
+    "/meteor/:board?": [
         "TonyRL"
     ],
     "/metmuseum/exhibitions": [
