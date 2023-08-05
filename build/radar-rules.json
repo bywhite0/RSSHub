@@ -1915,6 +1915,19 @@
       }
     ]
   },
+  "altervista.org": {
+    "_name": "Altervista",
+    "hyp3rlinx": [
+      {
+        "title": "hyp3rlinx blog",
+        "docs": "https://docs.rsshub.app/",
+        "source": [
+          "/"
+        ],
+        "target": "/rsshub/transform/html/http%3A%2F%2Fhyp3rlinx.altervista.org%2F/item=table[border=%221%22]%20tr%20td%20a"
+      }
+    ]
+  },
   "amazon.com": {
     "_name": "Amazon",
     ".": [
@@ -10889,6 +10902,57 @@
       }
     ]
   },
+  "hunau.edu.cn": {
+    "_name": "湖南农业大学",
+    "gfxy": [
+      {
+        "title": "公共管理与法学学院",
+        "docs": "https://docs.rsshub.app/university.html#hu-nan-nong-ye-da-xue",
+        "source": [
+          "/",
+          "tzgg",
+          "/:category"
+        ],
+        "target": "/:category"
+      }
+    ],
+    "ied": [
+      {
+        "title": "国际交流与合作处",
+        "docs": "https://docs.rsshub.app/university.html#hu-nan-nong-ye-da-xue",
+        "source": [
+          "/",
+          "/xwzx/ggtz",
+          "/:type/:category"
+        ],
+        "target": "/:type/:category"
+      }
+    ],
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/university.html#hu-nan-nong-ye-da-xue",
+        "source": [
+          "/",
+          "tzgg",
+          "/:category"
+        ],
+        "target": "/:category"
+      }
+    ],
+    "xky": [
+      {
+        "title": "信息与智能科学技术学院",
+        "docs": "https://docs.rsshub.app/university.html#hu-nan-nong-ye-da-xue",
+        "source": [
+          "/",
+          "tzgg_8472",
+          "/:category"
+        ],
+        "target": "/:category"
+      }
+    ]
+  },
   "huoxian.cn": {
     "_name": "火线",
     "zone": [
@@ -17104,6 +17168,14 @@
         "target": "/odaily/newsflash"
       },
       {
+        "title": "搜索快讯",
+        "docs": "https://docs.rsshub.app/new-media.html#odaily-xing-qiu-ri-bao-sou-suo-kuai-xun",
+        "source": [
+          "/search/:keyword"
+        ],
+        "target": "/odaily/search/news/:keyword"
+      },
+      {
         "title": "文章",
         "docs": "https://docs.rsshub.app/new-media.html#odaily-xing-qiu-ri-bao-wen-zhang",
         "source": [
@@ -17142,6 +17214,14 @@
           "/"
         ],
         "target": "/odaily/newsflash"
+      },
+      {
+        "title": "搜索快讯",
+        "docs": "https://docs.rsshub.app/new-media.html#odaily-xing-qiu-ri-bao-sou-suo-kuai-xun",
+        "source": [
+          "/search/:keyword"
+        ],
+        "target": "/odaily/search/news/:keyword"
       },
       {
         "title": "文章",
@@ -18728,6 +18808,20 @@
       }
     ]
   },
+  "rawkuma.com": {
+    "_name": "Rawkuma",
+    ".": [
+      {
+        "title": "Manga",
+        "docs": "https://docs.rsshub.app/anime.html#rawkuma-manga",
+        "source": [
+          "/manga/:id",
+          "/"
+        ],
+        "target": "/rawkuma/manga/:id"
+      }
+    ]
+  },
   "readhub.cn": {
     "_name": "Readhub",
     ".": [
@@ -19492,6 +19586,20 @@
           "/NewsList.aspx",
           "/"
         ]
+      }
+    ]
+  },
+  "sec.today": {
+    "_name": "每日安全",
+    ".": [
+      {
+        "title": "动态",
+        "docs": "https://docs.rsshub.app/",
+        "source": [
+          "/pulses",
+          "/"
+        ],
+        "target": "/rsshub/transform/html/https%3A%2F%2Fsec.today%2Fpulses%2F/item=div[class=\"card-body\"]"
       }
     ]
   },
@@ -24787,6 +24895,7 @@
         "title": "组合最新调仓信息",
         "docs": "https://docs.rsshub.app/finance.html#xue-qiu",
         "source": [
+          "/P/:id",
           "/p/:id"
         ],
         "target": "/xueqiu/snb/:id"
@@ -24795,7 +24904,8 @@
         "title": "股票信息",
         "docs": "https://docs.rsshub.app/finance.html#xue-qiu",
         "source": [
-          "/S/:id"
+          "/S/:id",
+          "/s/:id"
         ],
         "target": "/xueqiu/stock_info/:id"
       },
