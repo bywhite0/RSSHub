@@ -38487,6 +38487,19 @@
       }
     ]
   },
+  "readsomethingwonderful.com": {
+    "_name": "Read Something Wonderful",
+    ".": [
+      {
+        "title": "Articles",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/readsomethingwonderful/"
+      }
+    ]
+  },
   "readwise.io": {
     "_name": "Readwise",
     "read": [
@@ -43246,6 +43259,14 @@
         "target": "/techflowpost/express"
       },
       {
+        "title": "精选",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/index.html"
+        ],
+        "target": "/techflowpost/featured/:category?"
+      },
+      {
         "title": "首页",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
@@ -46514,6 +46535,19 @@
           "/news/index"
         ],
         "target": "/x-mol/news"
+      }
+    ]
+  },
+  "x410.dev": {
+    "_name": "x410",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/x410/news"
       }
     ]
   },

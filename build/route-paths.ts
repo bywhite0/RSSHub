@@ -2299,6 +2299,7 @@ export type RoutePath =
   | `/reactnewsletter/`
   | `/readhub/:category?`
   | `/readhub/daily`
+  | `/readsomethingwonderful/`
   | `/readwise/list/:routeParams?`
   | `/rebase/geekdaily`
   | `/remnote/changelog`
@@ -2630,6 +2631,7 @@ export type RoutePath =
   | `/techcrunch/news`
   | `/techflowpost/`
   | `/techflowpost/express`
+  | `/techflowpost/featured/:category?`
   | `/techpowerup/`
   | `/techpowerup/review/:keyword?`
   | `/techsir/`
@@ -2946,6 +2948,7 @@ export type RoutePath =
   | `/wzu/news/:type?`
   | `/x-mol/news/:tag?`
   | `/x-mol/paper/:type/:magazine`
+  | `/x410/news`
   | `/x6d/:id?`
   | `/xaufe/jiaowu/:category?`
   | `/xaut/index/:category?`

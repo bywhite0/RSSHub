@@ -7024,6 +7024,9 @@
     "nczitzk",
     "Fatpandac"
   ],
+  "/readsomethingwonderful/": [
+    "ttttmr"
+  ],
   "/readwise/list/:routeParams?": [
     "xbot"
   ],
@@ -8056,6 +8059,9 @@
   "/techflowpost/express": [
     "nczitzk"
   ],
+  "/techflowpost/featured/:category?": [
+    "zhenlohuang"
+  ],
   "/techflowpost/": [
     "nczitzk"
   ],
@@ -9042,6 +9048,9 @@
   ],
   "/x-mol/paper/:type/:magazine": [
     "cssxsh"
+  ],
+  "/x410/news": [
+    "nczitzk"
   ],
   "/x6d/:id?": [
     "nczitzk"
