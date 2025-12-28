@@ -1188,6 +1188,12 @@
   "/bt0/tlist/:sc/:domain?": [
     "miemieYaho"
   ],
+  "/btbtla/detail/:name": [
+    "Hermes1030"
+  ],
+  "/btbtla/gxlist": [
+    "Hermes1030"
+  ],
   "/btzj/:category?": [
     "nczitzk"
   ],
@@ -2168,6 +2174,9 @@
   "/deltaio/blog": [
     "RengarLee"
   ],
+  "/denonbu/news/:area?": [
+    "outloudvi"
+  ],
   "/dev.to/guides": [
     "Rjnishant530"
   ],
@@ -2476,6 +2485,9 @@
   "/duckdb/news": [
     "mocusez"
   ],
+  "/duozhi/:category{.+}?": [
+    "nczitzk"
+  ],
   "/duozhuayu/search/:wd": [
     "fengkx"
   ],
@@ -2599,6 +2611,11 @@
     "ChiyoYuki",
     "ECNU-minus"
   ],
+  "/ecnu/cxcy/:type?": [
+    "FrozenStarrrr",
+    "ChiyoYuki",
+    "ECNU-minus"
+  ],
   "/ecnu/dase": [
     "FrozenStarrrr",
     "ChiyoYuki",
@@ -2630,6 +2647,11 @@
     "ECNU-minus"
   ],
   "/ecnu/history": [
+    "FrozenStarrrr",
+    "ChiyoYuki",
+    "ECNU-minus"
+  ],
+  "/ecnu/jiaoliu": [
     "FrozenStarrrr",
     "ChiyoYuki",
     "ECNU-minus"
@@ -2971,6 +2993,9 @@
   ],
   "/foodtalks/": [
     "Geraldxm"
+  ],
+  "/foodtalks/news/tag/:tagId": [
+    "TonyRL"
   ],
   "/foreignaffairs/rss": [
     "dzx-dzx"
@@ -6042,6 +6067,9 @@
   "/nltimes/news/:category?": [
     "Hivol"
   ],
+  "/nmc/publish/:id{.+}?": [
+    "nczitzk"
+  ],
   "/nmc/weatheralarm/:province?": [
     "ylc395"
   ],
@@ -7397,6 +7425,9 @@
   ],
   "/sehuatang/user/:uid": [
     "JamYiz"
+  ],
+  "/semiconductors/:category{.+}?": [
+    "nczitzk"
   ],
   "/sensortower/blog/:language?": [
     "nczitzk"
